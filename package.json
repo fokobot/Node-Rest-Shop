@@ -1,0 +1,33 @@
+{
+  "name": "rest-shop",
+  "version": "1.0.0",
+  "description": "Una RESTful API de una tienda simple para practicar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fokobot/Node-Rest-Shop.git"
+  },
+  "keywords": [
+    "restful",
+    "api"
+  ],
+  "author": "Fabian Osorio Iriarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fokobot/Node-Rest-Shop/issues"
+  },
+  "homepage": "https://github.com/fokobot/Node-Rest-Shop#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
