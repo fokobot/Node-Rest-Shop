@@ -9,7 +9,8 @@ const orderRoutes = require('./api/routes/orders');
 
 mongoose.connect('mongodb+srv://node-rest-api:' + process.env.MONGO_ATLAS_PW + '@cluster0-qxwrl.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 })
 
 app.use(morgan('dev'));
