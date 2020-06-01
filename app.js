@@ -11,7 +11,8 @@ const userRoutes = require('./api/routes/users');
 mongoose.connect('mongodb+srv://node-rest-api:' + process.env.MONGO_ATLAS_PW + '@cluster0-qxwrl.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+    useCreateIndex: true
 })
 
 app.use(morgan('dev'));
